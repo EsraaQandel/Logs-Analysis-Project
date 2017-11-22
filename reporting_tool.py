@@ -28,6 +28,7 @@ result_3 = dict()
 
 # returns query result
 
+
 def get_result(query):
     """Connect to the PostgreSQL database"""
     try:
@@ -37,20 +38,21 @@ def get_result(query):
         results = c.fetchall()
         db.close()
         return results
-    except:
+    except Exception:
         print("Couldn't connect to database")
 
 
 def print_results(title, query_result):
-    print (title)
+    print(title)
     for result in query_result['results']:
-        print ('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' views')
+        print('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' views')
 
 
 def print_error_percentage(title, query_result):
-    print (title)
+    print(title)
     for result in query_result['results']:
-        print ('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' %')
+        print('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' %')
+
 
 if __name__ == '__main__':
     # stores results
