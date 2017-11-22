@@ -6,9 +6,9 @@ In this project you will build an internal reporting tool that will use informat
 You will get practice interacting with a live database both from the command line and from your code.
 
 > You will be working with a database that includes three tables:
-  * The authors table includes information about the authors of articles.
-  * The articles table includes the articles themselves.
-  * The log table includes one entry for each time a user has accessed the site.
+> * The authors table includes information about the authors of articles.
+> * The articles table includes the articles themselves.
+> * The log table includes one entry for each time a user has accessed the site.
 
 
 ## How to Run?
