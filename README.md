@@ -19,7 +19,7 @@ You will get practice interacting with a live database both from the command lin
 
 ### Prepare the software and data:
  
-  1. Download or Clone [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and Download the [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) from here.
+  1. Download or Clone [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository and Download the data from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
   2. Copy the newsdata.sql file -from the zip file you just downloaded - and content of this current repository
   3. launch the VM and install all the dependencies by running:
   
