@@ -53,12 +53,12 @@ def print_error_percentage(title, query_result):
         print ('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' %')
 
 if __name__ == '__main__':
-    # stores query result
+    # stores results
     result_1['results'] = get_result(query1)
     result_2['results'] = get_result(query2)
     result_3['results'] = get_result(query3)
 
-    # print formatted output
+    # print output
     print_results(title1, result_1)
     print_results(title2, result_2)
     print_error_percentage(title3, result_3)
