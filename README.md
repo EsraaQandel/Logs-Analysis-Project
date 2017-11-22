@@ -14,9 +14,10 @@ You will get practice interacting with a live database both from the command lin
 ## How to Run?
 
 #### PreRequisites:
-  * [Python3](https://www.python.org/)
-  * [Vagrant](https://www.vagrantup.com/)
-  * [VirtualBox](https://www.virtualbox.org/)
+  1. [Python3](https://www.python.org/) 
+  2. [VirtualBox](https://www.virtualbox.org/)
+  3. [Vagrant](https://www.vagrantup.com/)
+   
 
 #### Setup Project:
   1. Install Vagrant and VirtualBox
