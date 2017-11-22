@@ -13,19 +13,19 @@ You will get practice interacting with a live database both from the command lin
 
 ## How to Run?
 
-#### PreRequisites:
+### PreRequisites:
   1. [Python3](https://www.python.org/) 
   2. [VirtualBox](https://www.virtualbox.org/)
   3. [Vagrant](https://www.vagrantup.com/)
    
 
-#### Setup Project:
+### Setup Project:
   1. Install Vagrant and VirtualBox
   2. Download or Clone [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm) repository.
   3. Download the [data](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) from here.
   4. Copy the newsdata.sql file -from the zip file you just downloaded - and content of this current repository
 
-#### Launching the Virtual Machine:
+### Launching the Virtual Machine:
   1. Navigate to the sub directory in the downloaded folder -fullstack-nanodegree-vm- to install all the dependencies by running:
   
   ```
@@ -38,7 +38,7 @@ You will get practice interacting with a live database both from the command lin
   ```
  
   
-#### loading the data and Creating Views:
+### loading the data and Creating Views:
 
   1. Load the data in local database using the command:
   
@@ -63,7 +63,7 @@ You will get practice interacting with a live database both from the command lin
     group by date(time) order by error DESC;
   ```
 
-#### Run the reporting tool:
+### Run the reporting tool:
 
   ```
     $ python3 reporting_tool.py
