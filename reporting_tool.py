@@ -22,13 +22,13 @@ query3 = """select date, round (CAST((error/total::float)*100 AS numeric) ,2) as
 from error_lead_view where (error/total::float)*100 > 1"""
 
 # to store results
-query_1_result = dict()
-query_2_result = dict()
-query_3_result = dict()
+result_1 = dict()
+result_2 = dict()
+result_3 = dict()
 
 # returns query result
 
-def get_query_result(query):
+def get_result(query):
     """Connect to the PostgreSQL database"""
     try:
         db = psycopg2.connect(database=DB_NAME)
@@ -41,24 +41,24 @@ def get_query_result(query):
         print("Couldn't connect to database")
 
 
-def print_query_results(title, query_result):
+def print_results(title, query_result):
     print (title)
     for result in query_result['results']:
         print ('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' views')
 
 
-def print_error_query_results(title, query_result):
+def print_error_percentage(title, query_result):
     print (title)
     for result in query_result['results']:
         print ('\t' + str(result[0]) + ' --->>> ' + str(result[1]) + ' %')
 
 if __name__ == '__main__':
     # stores query result
-    query_1_result['results'] = get_query_result(query1)
-    query_2_result['results'] = get_query_result(query2)
-    query_3_result['results'] = get_query_result(query3)
+    result_1['results'] = get_result(query1)
+    result_2['results'] = get_result(query2)
+    result_3['results'] = get_result(query3)
 
     # print formatted output
-    print_query_results(title1, query_1_result)
-    print_query_results(title2, query_2_result)
-    print_error_query_results(title3, query_3_result)
+    print_results(title1, result_1)
+    print_results(title2, result_2)
+    print_error_percentage(title3, result_3)
