@@ -33,13 +33,8 @@ You will get practice interacting with a live database both from the command lin
     $ vagrant ssh
   ```
 
-  6. Load the data in local database using the command:
-  
-  ```
-    psql -d news -f newsdata.sql
-  ```
- 
-  
+  6. Use `psql -d news -f newsdata.sql` to Load the data in local database using the command:
+
   7. Use `psql -d news` to connect to database.
   
   8. Create view articles_view using:
